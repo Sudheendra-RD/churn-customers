@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model deployment</title>
+</head>
+<body>
+    <h1>Model Deployment</h1>
+    <p>
+        enter the details
+    </p>
+    <form action="/" method="POST">
+        
+        <label for="age">Age</label>
+        <input type="number" class="form-control" id="age" name="age"><br>
+
+        <label for="CUS">Customer Monthly Income(without comma)</label>
+        <input type="number" class="form-control" id="CUS" name="CUS"><br>
+
+        <label for="gender">Gender (Male = 1; Female = 0)</label>
+        <input type="number" class="form-control" id="gender" name="gender"><br>
+
+        <label for="year">Years with the bank</label>
+        <input type="number" class="form-control" id="year" name="year"><br>
+
+        <label for="TDA">Total debit amount</label>
+        <input type="number" class="form-control" id="TDA" name="TDA"><br>
+
+        <label for="TDT">Total debit transactions</label>
+        <input type="number" class="form-control" id="TDT" name="TDT"><br>
+
+        <label for="TCA">Total credit amount</label>
+        <input type="number" class="form-control" id="TCA" name="TCA"><br>
+
+        <label for="TCT">Total credit transactions</label>
+        <input type="number" class="form-control" id="TCT" name="TCT"><br>
+
+        <input type="submit">
+    </form>
+
+    {% if pre == 0%}
+        <h1>The Customer might become a Churn Customer</h1>
+    {% else %}
+        <h1>The Customer will not become a Churn Customer</h1>
+    {% endif %}
+</body>
+</html>
